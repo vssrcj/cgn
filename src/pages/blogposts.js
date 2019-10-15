@@ -1,10 +1,10 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import React from "react"
+import { Link, graphql } from "gatsby"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const BlogPosts = ({ data }) => {
-  const blogPosts = data.allContentfulBlogPost.edges;
+  const blogPosts = data.allContentfulBlogPost.edges
 
   return (
     <Layout>
@@ -20,10 +20,10 @@ const BlogPosts = ({ data }) => {
         <Link to="/">Go back to the homepage</Link>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default BlogPosts;
+export default BlogPosts
 
 export const query = graphql`
   query BlogPostsPageQuery {
@@ -46,4 +46,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`
